@@ -1,0 +1,104 @@
+<resources>
+
+    <string name="app_name">NotepadTask</string>
+    <string name="data_settings">Settings_data</string>
+
+    <!--топ бар  -->
+    <string name="name_title_topAppBar">Notepad Task</string>
+    <string name="search_input_field">Поиск</string>
+    <string name="settings">Настройки</string>
+    <string name="basket">Корзина</string>
+
+    <!--  для карточки задачи (таски)  -->
+    <string name="input_title">Заголовок</string>
+    <string name="input_text">Начните вводить текст</string>
+
+    <!-- Alert Dialog-->
+    <!--заголовок даилога-->
+    <string name="alert_dialog_title">Подтверждение действия</string>
+
+    <!-- кнопки алерт диалога  -->
+    <string name="alert_dialog_button_cancel">Отмена</string>
+    <string-array name="alert_dialog_button">
+        <item>Удалить</item>
+        <item>Восстановить</item>
+    </string-array>
+
+    <!--текст диалога для файла taskCardItem-->
+    <string-array name="alert_dialog_message_for_task">
+        <item>Вы действительно хотите удалить выбранный объект?</item>
+        <item>Удалить объект навсегда?</item>
+        <item>Восстановить удаленный объект?</item>
+    </string-array>
+
+    <!--текст диалога для файла taskRemoteScreen-->
+    <string-array name="alert_dialog_message_for_remote_sreen">
+        <item>Удалить все объекты из корзины?</item>
+        <item>Восстановить все объекты из корзины?</item>
+    </string-array>
+    <string name="number_objects">Объектов: </string>
+    <string name="number_objects_1000000">Объектов: 1 000 000...></string>
+
+
+
+
+
+    <!--снекбар-->
+    <!--отмена удаления-->
+    <string name="snackbar_dismiss_text">Отменить</string>
+    <!--информационое сообщение-->
+    <string name="snackbar_message_text">Отменить удаление?</string>
+
+    <!--сообщение тоста-->
+    <string name="message_toast">удаленно</string>
+
+
+    <!-- для экрана выбора настроеек  -->
+    <string name="theme_mode">Режим темы:</string>
+    <string name="size_text">Размер текста:</string>
+    <string name="rounding_corner">Форма угла:</string>
+    <string name="style_color">Цветовой стиль:</string>
+
+    <!-- для диалогового окна выбора темы -->
+    <string name="dialog_selection_cancel">Отмена</string>
+    <string name="dialog_selection_accept">Применить</string>
+
+
+    <!-- выпадающие меню режима темы -->
+    <string-array name="array_theme_mode">
+        <item>Устройство</item>
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array>
+
+    <!-- выпадающие меню размера шрифта  -->
+    <string-array name="array_size_text">
+        <item>Большой:</item>
+        <item>Средний:</item>
+        <item>Маленький:</item>
+    </string-array>
+
+    <!-- выпадающие меню формы карточек -->
+    <string-array name="array_shape_corner">
+        <item>Круглый:</item>
+        <item>Скругленный:</item>
+        <item>Плоский:</item>
+    </string-array>
+
+    <!-- ключи настроеек для преференс  -->
+    <string name="PALETTE">colorPalette</string>
+    <string name="SIZE">customSize</string>
+    <string name="CORNER">custom_corner</string>
+    <string name="THEME_MODE">themeMode</string>
+
+    <!-- ключи настроеек для преференс значения по умолчанию  -->
+    <!-- паллетка по умолчанию  -->
+    <string name="PALETTE_DEFAULT">Orange</string>
+    <!-- размер шрифта по умолчанию  -->
+    <string name="SIZE_DEFAULT">Medium</string>
+    <!-- форма компонентов по умолчанию  -->
+    <string name="CORNER_DEFAULT">Medium</string>
+    <!-- тема по умолчанию  -->
+    <string name="THEME_MODE_DEFAULT">System</string>
+
+</resources>

@@ -1,0 +1,4 @@
+/build
+/androidTest/
+consumer-rules.pro
+proguard-rules.pro
