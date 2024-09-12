@@ -8,4 +8,4 @@
 > #### Результатом такого проекта является расширение портфолио, приобретение и закрепление новых навыков.
 >> по мере написания, проект будет дополняться новым функционалом.
 ____
-**Apk файл можно скачать [здесь](https://raw.githubusercontent.com/RaslOmka/Test-app-Task-List.apk/main/NotepadTask%20-%20debug%20version.apk%20.apk)**
+**Apk файл можно скачать [здесь](https://gitflic.ru/project/rasl/test-app-task-list-apk/blob/raw?file=NotepadTask%20-%20debug%20version.apk%20.apk&inline=false&commit=892807d01fe96fec6472a5afd9627a4ca9005fa3)**
