@@ -32,6 +32,6 @@ object DataModule {
 
     @Provides
     @Singleton
-    fun provideTaskEntityMapper(taskMapper: TaskEntityMapper): TaskEntityMapper =
+    fun provideTaskEntityMapper(): TaskEntityMapper =
         TaskEntityMapper()
 }
