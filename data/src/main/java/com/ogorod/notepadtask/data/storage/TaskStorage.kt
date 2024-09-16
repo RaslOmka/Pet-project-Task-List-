@@ -16,6 +16,4 @@ interface TaskStorage {
 
     suspend fun setTimerDeleteTasks(vararg task: Task)
     suspend fun delete(vararg task: Task)
-
-
 }

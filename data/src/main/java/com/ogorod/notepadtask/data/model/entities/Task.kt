@@ -13,4 +13,5 @@ data class Task(
     val date: String,
     val delete: Boolean = false,
     val timerDelete: Long? = null
+
 )

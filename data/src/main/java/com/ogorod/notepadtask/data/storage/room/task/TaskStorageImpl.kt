@@ -54,5 +54,4 @@ class TaskStorageImpl(private val taskDAO: TaskDAO) : TaskStorage {
     //вернуть все таки отмеченные как избранные
     override fun getAllFavorite(): Flow<List<Task>> =
         taskDAO.loadAllTaskFavorite()
-
 }

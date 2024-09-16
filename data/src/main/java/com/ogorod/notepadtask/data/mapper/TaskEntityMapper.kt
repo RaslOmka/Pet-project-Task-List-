@@ -4,7 +4,6 @@ import com.ogorod.notepadtask.data.model.entities.Task
 import com.ogorod.notepadtask.domain.dto.TaskDTO
 
 class TaskEntityMapper {
-
     fun toDTO(task: Task): TaskDTO =
         TaskDTO(
             id = task.id,
@@ -25,5 +24,4 @@ class TaskEntityMapper {
         delete = taskDTO.delete,
         timerDelete = taskDTO.timerDelete
     )
-
 }

@@ -56,5 +56,4 @@ class TaskRepositoryImpl(
 
     override fun getFavorite(): Flow<List<TaskDTO>> =
         taskStorage.getAllFavorite().map { list -> list.map { task -> taskMapper.toDTO(task) } }
-
 }
