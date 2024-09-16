@@ -8,6 +8,6 @@ import kotlinx.coroutines.flow.Flow
 class SearchTaskUseCase(private val taskRepository: TaskRepository) {
 
     fun execute(searchTask: String): Flow<List<TaskDTO>> =
-        taskRepository.searchTask(searchTaskDTO = "%" + searchTask + "%")
+        taskRepository.searchTask(searchTaskDTO = "%$searchTask%")
 
 }

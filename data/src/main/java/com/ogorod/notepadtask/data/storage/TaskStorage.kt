@@ -1,21 +1,21 @@
 package com.ogorod.notepadtask.data.storage
 
-import com.ogorod.notepadtask.domain.dto.TaskDTO
+import com.ogorod.notepadtask.data.model.entities.Task
 import kotlinx.coroutines.flow.Flow
 
 interface TaskStorage {
-    suspend fun save(taskDTO: TaskDTO)
-    suspend fun update(taskDTO: TaskDTO)
-    suspend fun cancelDeleteTask(taskDTO: TaskDTO)
-    suspend fun restoreAllDeleteTasks(vararg tasks: TaskDTO)
+    suspend fun save(task: Task)
+    suspend fun update(task: Task)
+    suspend fun cancelDeleteTask(task: Task)
+    suspend fun restoreAllDeleteTasks(vararg tasks: Task)
 
-    fun search(searchTask: String): Flow<List<TaskDTO>>
-    fun getAll(): Flow<List<TaskDTO>>
-    fun getAllFavorite(): Flow<List<TaskDTO>>
-    fun getAllTimerDeleteTasks(): Flow<List<TaskDTO>>
+    fun search(searchTask: String): Flow<List<Task>>
+    fun getAll(): Flow<List<Task>>
+    fun getAllFavorite(): Flow<List<Task>>
+    fun getAllTimerDeleteTasks(): Flow<List<Task>>
 
-    suspend fun setTimerDeleteTasks(vararg taskDTO: TaskDTO)
-    suspend fun delete(vararg taskDTO: TaskDTO)
+    suspend fun setTimerDeleteTasks(vararg task: Task)
+    suspend fun delete(vararg task: Task)
 
 
 }
