@@ -1,5 +1,6 @@
 package com.ogorod.notepadtask.di
 
+import com.ogorod.notepadtask.data.mapper.TaskEntityMapper
 import com.ogorod.notepadtask.data.repository.TaskRepositoryImpl
 import com.ogorod.notepadtask.data.storage.TaskStorage
 import com.ogorod.notepadtask.data.storage.room.task.TaskDAO
@@ -17,12 +18,20 @@ object DataModule {
 
     @Provides
     @Singleton
-    fun provideTaskRepository(taskStorage: TaskStorage): TaskRepository =
-        TaskRepositoryImpl(taskStorage = taskStorage)
+    fun provideTaskRepository(
+        taskStorage: TaskStorage,
+        taskMapper: TaskEntityMapper
+    ): TaskRepository =
+        TaskRepositoryImpl(taskStorage = taskStorage, taskMapper = taskMapper)
 
 
     @Provides
     @Singleton
     fun provideTaskStorage(taskDAO: TaskDAO): TaskStorage =
         TaskStorageImpl(taskDAO = taskDAO)
+
+    @Provides
+    @Singleton
+    fun provideTaskEntityMapper(taskMapper: TaskEntityMapper): TaskEntityMapper =
+        TaskEntityMapper()
 }
