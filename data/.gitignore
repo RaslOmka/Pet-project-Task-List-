@@ -2,3 +2,4 @@
 /androidTest/
 consumer-rules.pro
 proguard-rules.pro
+src/test
